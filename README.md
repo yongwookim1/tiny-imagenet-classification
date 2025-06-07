@@ -21,12 +21,7 @@ You can also download dataset here.
 
 ### Summary
 
-Goal of this project is to evaluate transfer learning on tiny-imagenet dataset.
-
-Tiny-ImageNet dataset has images of size 64x64, but ImageNet dataset is trained on 224x224 images.
-To match the input size, I resized tiny-imagenet dataset to 224x224 and trained on pretrained weight from ImageNet.
-
-Finetune few layers, and use pretrained weight from 224x224 trained model to retrain 64x64 image on ResNet18
+Goal of this project is to surpass the scores of previous models.
 
 ### Test Result
 
@@ -35,7 +30,7 @@ Finetune few layers, and use pretrained weight from 224x224 trained model to ret
 | AlexNet         | 35.88%      | 64x64      | ImageNet          |
 | ResNet18        | 53.58%      | 64x64      | ImageNet          |
 | ResNet18        | 69.62%      | 224x224    | ImageNet          |
-| *EfficientNetB1 | 74.70%      | 224x224    | ImageNet          |
+| **EfficientNetB1** | **74.70%**      | 224x224    | ImageNet          |
 
 ### Acknowledgement
 
