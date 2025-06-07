@@ -1,4 +1,4 @@
-# Pytorch-Tiny-ImageNet
+# Tiny ImageNet Classification
 
 ### Installation
 
@@ -30,13 +30,14 @@ Finetune few layers, and use pretrained weight from 224x224 trained model to ret
 
 ### Test Result
 
-| Model    | Test Result | Input size | pretrained weight |
-| -------- | ----------- | ---------- | ----------------- |
-| AlexNet  | 35.88%      | 64x64      | ImageNet          |
-| ResNet18 | 53.58%      | 64x64      | ImageNet          |
-| ResNet18 | 69.62%      | 224x224    | ImageNet          |
+| Model           | Test Result | Input size | pretrained weight |
+| --------------- | ----------- | ---------- | ----------------- |
+| AlexNet         | 35.88%      | 64x64      | ImageNet          |
+| ResNet18        | 53.58%      | 64x64      | ImageNet          |
+| ResNet18        | 69.62%      | 224x224    | ImageNet          |
+| *EfficientNetB1 | 74.70%      | 224x224    | ImageNet          |
 
 ### Acknowledgement
 
 This repository is modified and adapted on this repository.
-[pytroch-tiny-imagenet](https://github.com/tjmoon0104/pytorch-tiny-imagenet)
+[pytorch-tiny-imagenet](https://github.com/tjmoon0104/pytorch-tiny-imagenet)
