@@ -9,6 +9,8 @@ def main(args):
     epochs = args.epochs
     batch_size = args.batch_size
     
+    set_seed()
+    
     device = set_device()
     dataloaders = set_dataloaders(dataset, batch_size)
     model_ft, criterion, optimizer_ft = set_model(model_name)
@@ -34,7 +36,7 @@ if __name__ == "__main__":
     
     parser.add_argument("--model", type=str, default="wideresnet")
     parser.add_argument("--dataset", type=str, default="tiny-224")
-    parser.add_argument("--epochs", type=int, default=20)
+    parser.add_argument("--epochs", type=int, default=10)
     parser.add_argument("--batch_size", type=int, default=128)
     
     args = parser.parse_args()

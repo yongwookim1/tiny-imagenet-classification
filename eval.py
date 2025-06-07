@@ -24,7 +24,7 @@ if __name__ == "__main__":
     
     parser.add_argument("--model", type=str, default="resnet")
     parser.add_argument("--dataset", type=str, default="tiny-224")
-    parser.add_argument("--epoch", type=int, default=48)
+    parser.add_argument("--epoch", type=int, required=True)
     parser.add_argument("--batch_size", type=int, default=128)
     
     args = parser.parse_args()

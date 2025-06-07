@@ -1,6 +1,8 @@
 import os
 import time
 from pathlib import Path
+import random
+import numpy as np
 from livelossplot import PlotLosses
 
 
@@ -11,6 +13,17 @@ import torch.utils.data as data
 import torchvision.datasets as datasets
 import torchvision.models as models
 import torchvision.transforms as transforms
+
+
+def set_seed():
+    seed = 42
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
 
 
 def set_device():
@@ -66,7 +79,7 @@ def set_model(model: str):
     # Load model
     torch.manual_seed(42)
     model_dict = {"resnet": models.resnet18(weights="DEFAULT"),
-                  "efficientnet": models.efficientnet_b2(weights="DEFAULT"),
+                  "efficientnet": models.efficientnet_b1(weights="DEFAULT"),
                   "widerenset": models.wide_resnet50_2(weights="DEFAULT"),
                   "mobilenet": models.mobilenet_v3_small(weights="DEFAULT"),
                   "vit": models.vit_b_16(weights="DEFAULT"),
