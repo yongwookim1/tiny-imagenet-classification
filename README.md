@@ -30,7 +30,7 @@ Goal of this project is to surpass the scores of previous models.
 | AlexNet         | 35.88%      | 64x64      | ImageNet          |
 | ResNet18        | 53.58%      | 64x64      | ImageNet          |
 | ResNet18        | 69.62%      | 224x224    | ImageNet          |
-| **EfficientNetB1** | **73.74%**      | 224x224    | ImageNet          |
+| ___*EfficientNetB1___ | ___73.74%___      | 224x224    | ImageNet          |
 
 ### Acknowledgement
 
